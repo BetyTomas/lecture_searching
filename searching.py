@@ -19,11 +19,6 @@ def read_data(file_name, field):
     file_path = cwd_path / file_name
 
 
-def main():
-    sequential_data = read_data("sequential.json", "unordered_numbers")
-    print(sequential_data)
-    print(linear_search([0, 2, 2, 22, 5, 55, 12, 10], 2))
-
 
 
 
@@ -44,15 +39,10 @@ def linear_search(prohledavana_sekvence, hledane_cislo):
     return slovnik_klice
 
 
-
-
-
-
-
-
-
-
-
+def main():
+    sequential_data = read_data("sequential.json", "unordered_numbers")
+    print(sequential_data)
+    print(linear_search([0, 2, 2, 22, 5, 55, 12, 10], 2))
 
 
 
