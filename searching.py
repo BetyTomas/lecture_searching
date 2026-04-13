@@ -22,7 +22,7 @@ def read_data(file_name, field):
 def main():
     sequential_data = read_data("sequential.json", "unordered_numbers")
     print(sequential_data)
-
+    print(linear_search([0, 2, 2, 22, 5, 55, 12, 10], 2))
 
 
 
@@ -42,6 +42,15 @@ def linear_search(prohledavana_sekvence, hledane_cislo):
     slovnik_klice["count"] = count
 
     return slovnik_klice
+
+
+
+
+
+
+
+
+
 
 
 
