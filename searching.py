@@ -24,6 +24,31 @@ def main():
     print(sequential_data)
 
 
+
+
+
+def linear_search(prohledavana_sekvence, hledane_cislo):
+    slovnik_klice = {"positions": "", "count": 0}
+
+    seznam_pozic = []
+    count = 0
+
+    for i in range(len(prohledavana_sekvence)):
+        if prohledavana_sekvence[i] == hledane_cislo:
+            seznam_pozic.append(i)
+            count += 1
+
+    slovnik_klice["positions"] = seznam_pozic
+    slovnik_klice["count"] = count
+
+    return slovnik_klice
+
+
+
+
+
+
 if __name__ == "__main__":
-    main()
+    print(linear_search([0, 2, 2, 22, 5, 55, 12, 10], 2))
+
 
